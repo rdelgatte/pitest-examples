@@ -1,8 +1,8 @@
 package com.github.rdelgatte.pitest;
 
-class Validator {
+class RangeValidator {
 
   boolean isValid(int input) {
-    return !(input < 100);
+    return input > 0 && input <= 100;
   }
 }
