@@ -20,18 +20,6 @@ class RangeValidatorTest {
    */
 
   @Test
-  @DisplayName("Should return false given 110")
-  void positiveNumberOverHundred_isValid_returnsFalse() {
-    assertThat(cut.isValid(110)).isFalse();
-  }
-
-  @Test
-  @DisplayName("Should return true given 50")
-  void positiveNumberUnderHundred_isValid_returnsTrue() {
-    assertThat(cut.isValid(50)).isTrue();
-  }
-
-  @Test
   @DisplayName("Should return true given 100")
   void hundred_isValid_returnsTrue() {
     assertThat(cut.isValid(100)).isTrue();
