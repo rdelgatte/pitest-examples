@@ -69,10 +69,10 @@
             <outputFormat>HTML</outputFormat>
           </outputFormats>
           <targetClasses>
-            <param>com.github.rdelgatte.pitest.*</param>
+            <param>com.rdelgatte.pitest.*</param>
           </targetClasses>
           <targetTests>
-            <param>com.github.rdelgatte.pitest.*</param>
+            <param>com.rdelgatte.pitest.*</param>
           </targetTests>
           <exportLineCoverage>true</exportLineCoverage>
           <!--We want each report to override the former one-->
