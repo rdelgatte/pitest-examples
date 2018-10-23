@@ -1,5 +1,7 @@
 # Mutation testing with Pitest
 
+Introduction to Mutation testing: https://rdelgatte.github.io/pitest-introduction/
+
 This basic project aims to highlight benefits of mutation testing in Java using [Pitest](http://pitest.org)
 
 ## RangeValidator
