@@ -1,4 +1,4 @@
-package com.github.rdelgatte.pitest;
+package com.rdelgatte.pitest;
 
 class RangeValidator {
 

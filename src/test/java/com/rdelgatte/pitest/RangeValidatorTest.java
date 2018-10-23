@@ -1,4 +1,4 @@
-package com.github.rdelgatte.pitest;
+package com.rdelgatte.pitest;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
