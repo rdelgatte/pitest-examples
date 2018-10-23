@@ -22,18 +22,18 @@ class RangeValidatorTest {
   @Test
   @DisplayName("Should return true given 50")
   void fifty_isValid_returnsTrue() {
-    assertThat(cut.isValid(50)).isTrue();
+    cut.isValid(50);
   }
 
   @Test
   @DisplayName("Should return false given 200")
   void twoHundred_isValid_returnsFalse() {
-    assertThat(cut.isValid(200)).isFalse();
+    cut.isValid(200);
   }
 
   @Test
   @DisplayName("Should return false given -10")
   void minusTen_isValid_returnsFalse() {
-    assertThat(cut.isValid(-10)).isFalse();
+    cut.isValid(-10);
   }
 }
