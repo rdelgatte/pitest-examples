@@ -11,7 +11,7 @@ boolean isValid(int input) {
 }
 ```
 
-#### 1) Initial state (`git checkout step-0`)
+### 1) Initial state (`git checkout step-0`)
 In this step, we can notice that our code is fully covered by unit tests:
 
 ![Jacoco report](doc/jacoco-step-0.png)
@@ -43,7 +43,8 @@ But when looking at the unit tests, we can notice they are assessing nothing:
 
 Both line and branch coverage are reporting a 100% unit tests covering but nothing is being tested really!!
 
-#### Adding assertions (`git checkout step-1`)
+
+### 2) Adding assertions (`git checkout step-1`)
 Let's assert that use cases!
 
 ```
@@ -68,7 +69,8 @@ Let's assert that use cases!
 
 Ok we do feel better now right? Reports from Sonar / Jacoco still look good with 100% code coverage reporting but can we go further?
 
-#### Mutation testing (`git checkout step-2`)
+
+### 3) Mutation testing (`git checkout step-2`)
 Let's talk about mutation testing!
 
 Adding Pitest to our `pom.xml` file: 
@@ -148,11 +150,9 @@ Following are the test cases to cover mutation testing:
 Running again Pitest mutation coverage command and looking at its report, we can notice bot line and mutation coverage look 100% good:
 
 ![Pitest report](doc/pit-report-step-3.png)
-*Pitest report*
+*Pitest report after mutation test coverage*
 
 ![Pitest detailed report](doc/pit-report-detailed-step-3.png)
-*Pitest detailed report*
-
+*Pitest detailed report after mutation test coverage*
 
 You can see more about this case (step by step) in the following [introduction to Mutation Testing](https://rdelgatte.github.io/pitest-presentation/).
- 
