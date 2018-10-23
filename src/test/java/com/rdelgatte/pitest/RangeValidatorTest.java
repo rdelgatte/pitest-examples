@@ -32,14 +32,8 @@ class RangeValidatorTest {
   }
 
   @Test
-  @DisplayName("Should return true given 100")
-  void hundred_isValid_returnsTrue() {
-    assertThat(cut.isValid(100)).isTrue();
-  }
-
-  @Test
-  @DisplayName("Should return false given 0")
-  void zero_isValid_returnsFalse() {
-    assertThat(cut.isValid(0)).isFalse();
+  @DisplayName("Should return false given -10")
+  void minusTen_isValid_returnsFalse() {
+    assertThat(cut.isValid(-10)).isFalse();
   }
 }
