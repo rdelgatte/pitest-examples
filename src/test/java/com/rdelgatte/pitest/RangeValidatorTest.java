@@ -26,14 +26,21 @@ class RangeValidatorTest {
   }
 
   @Test
-  @DisplayName("Should return false given 200")
-  void twoHundred_isValid_returnsFalse() {
-    assertThat(cut.isValid(200)).isFalse();
+  @DisplayName("Should return true given 200")
+  void twoHundred_isValid_returnsTrue() {
+    assertThat(cut.isValid(200)).isTrue();
   }
 
   @Test
-  @DisplayName("Should return false given -10")
-  void minus10_isValid_returnsFalse() {
-    assertThat(cut.isValid(-10)).isFalse();
+  @DisplayName("Should return true given -10")
+  void minus10_isValid_returnsTrue() {
+    assertThat(cut.isValid(-10)).isTrue();
   }
+
+  @Test
+  @DisplayName("Should return true given 0")
+  void zero_isValid_returnsTrue() {
+    assertThat(cut.isValid(0)).isFalse();
+  }
+
 }
